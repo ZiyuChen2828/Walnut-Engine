@@ -1,5 +1,6 @@
 #include "Application.h"
 
+
 namespace Walnut {
 
 	Application::Application()
@@ -15,6 +16,7 @@ namespace Walnut {
 		while (true);
 	}
 
-	
-
 }
+
+
+

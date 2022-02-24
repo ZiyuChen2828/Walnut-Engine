@@ -21,9 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Walnut\core.h">
-      <Filter>src\Walnut</Filter>
-    </ClInclude>
     <ClInclude Include="src\Walnut\Application.h">
       <Filter>src\Walnut</Filter>
     </ClInclude>
@@ -33,10 +30,19 @@
     <ClInclude Include="src\Walnut\EntryPoint.h">
       <Filter>src\Walnut</Filter>
     </ClInclude>
+    <ClInclude Include="src\Walnut\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Walnut\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Walnut\Application.cpp">
       <Filter>src\Walnut</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Walnut\Log.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
