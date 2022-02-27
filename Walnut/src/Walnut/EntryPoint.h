@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 	Walnut::Log::Init();
 	WN_CORE_WARN("engine init logs");
 	int a = 1;
-	WN_CLIENT_INFO("Hello! Var={0}", a);
+	WN_INFO("Hello! Var={0}", a);
 	auto app = Walnut::CreateApplication();
 	app->Run();
 	delete app;

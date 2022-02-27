@@ -4,6 +4,9 @@
     <Filter Include="Walnut">
       <UniqueIdentifier>{C038E8D9-ACDA-12B0-9595-260481D69900}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Walnut\Event">
+      <UniqueIdentifier>{114AA593-FDAC-3438-A632-6DEE927400BB}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Walnut.h" />
@@ -19,6 +22,12 @@
     <ClInclude Include="src\Walnut\Log.h">
       <Filter>Walnut</Filter>
     </ClInclude>
+    <ClInclude Include="src\Walnut\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Walnut\Events\Event.h">
+      <Filter>Walnut\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Walnut\Events\KeyEvent.h" />
+    <ClInclude Include="src\Walnut\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Walnut\Application.cpp">

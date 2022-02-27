@@ -26,6 +26,7 @@ project "Walnut"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"Walnut/vendor/spdlog/include"
 	}
 
