@@ -35,7 +35,7 @@ namespace Walnut {
 		{
 			// terminate on sys shutdown
 			int success = glfwInit();
-			// WN_CORE_ASSERT(success, "Could not intialize GLFW!");
+			WN_CORE_ASSERT(success, "Could not intialize GLFW!");
 			s_GLFWInitialzied = true;
 		}
 
