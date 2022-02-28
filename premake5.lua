@@ -10,6 +10,13 @@ workspace "Walnut"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Irelative to root folder (solution dir)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Walnut/vendor/GLFW/include"
+IncludeDir["spdlog"] = "Walnut/vendor/spdlog/include"
+
+include "Walnut/vendor/GLFW"
+
 project "Walnut"
 	location "Walnut"
 	kind "SharedLib"
@@ -18,16 +25,28 @@ project "Walnut"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+
+	pchheader "pch.h"
+	pchsource "Walnut/src/pch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
 	}
 
+
 	includedirs
 	{
 		"%{prj.name}/src",
-		"Walnut/vendor/spdlog/include"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.spdlog}",
+	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

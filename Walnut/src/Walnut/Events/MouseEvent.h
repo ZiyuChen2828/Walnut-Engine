@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Walnut {
 
 	class WN_API MouseMovedEvent : public Event

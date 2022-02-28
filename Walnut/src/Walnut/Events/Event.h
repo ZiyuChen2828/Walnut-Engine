@@ -1,10 +1,8 @@
 #pragma once
 
-
+#include "pch.h"
 #include "Walnut/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace Walnut {
 
