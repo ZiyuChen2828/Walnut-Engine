@@ -23,6 +23,7 @@ namespace Walnut {
 		void SetVSync(bool enabled) override;
 		bool IsVSync() const override;
 
+
 	private:
 		virtual void Init(const WindowProps& props);
 		virtual void Shutdown();
